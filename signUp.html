@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-orange-200 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand -->
+                <div class="flex items-center">
+                    <img class="h-8 mr-2" src="images/logo.png" alt="Logo">
+                    <a href="#" class="text-white font-bold text-xl">Fresh Petals</a>
+                </div>
+    
+                <!-- Menu items -->
+                <div class="hidden md:block">
+                    <ul class="ml-4 flex items-center space-x-4">
+                        <li><a href="index.html" class="text-xl text-orange-400 hover:text-orange-600">Home</a></li>
+                        <li><a href="aboutUs.html" class="text-xl text-orange-400 hover:text-orange-600">About us</a></li>
+                        <li><a href="#" class="text-xl text-orange-400 hover:text-orange-600">Services</a></li>
+                        <li><a href="#" class="text-xl text-orange-400 hover:text-orange-600">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sign up and sign in buttons -->
+                <div class="hidden md:block">
+                    <ul class="ml-4 flex items-center space-x-4">
+                        <li><a href="signUp.html" class="text-xl text-white hover:text-gray-300">Sign Up</a></li>
+                        <li><a href="#" class="text-xl text-white hover:text-gray-300">Sign In</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Mobile menu button (hidden on large screens) -->
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </nav>
+    <!-- signup -->
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-center">Sign Up</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="username" class="block text-gray-700 font-semibold mb-2">Username</label>
+                    <input type="text" id="username" name="username" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Enter your username" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Enter your email address" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+                    <input type="password" id="password" name="password" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Enter your password" required>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

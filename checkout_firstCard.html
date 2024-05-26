@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-orange-200 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Brand -->
+                <div class="flex items-center">
+                    <img class="h-8 mr-2" src="images/logo.png" alt="Logo">
+                    <a href="#" class="text-white font-bold text-xl">Fresh Petals</a>
+                </div>
+    
+                <!-- Menu items -->
+                <div class="hidden md:block">
+                    <ul class="ml-4 flex items-center space-x-4">
+                        <li><a href="index.html" class="text-xl text-orange-400 hover:text-orange-600">Home</a></li>
+                        <li><a href="aboutUs.html" class="text-xl text-orange-400 hover:text-orange-600">About us</a></li>
+                        <li><a href="services.html" class="text-xl text-orange-400 hover:text-orange-600">Services</a></li>
+                        <li><a href="#" class="text-xl text-orange-400 hover:text-orange-600">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sign up and sign in buttons -->
+                <div class="hidden md:block">
+                    <ul class="ml-4 flex items-center space-x-4">
+                        <li><a href="signUp.html" class="text-xl text-white hover:text-gray-300">Sign Up</a></li>
+                        <li><a href="#" class="text-xl text-white hover:text-gray-300">Sign In</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Mobile menu button (hidden on large screens) -->
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </nav>
+    
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto flex">
+          <div class="lg:w-1/2 w-full lg:h-auto h-64 mr-4">
+            <img alt="Product" class="w-full h-full object-cover object-center rounded" src="images/bouquit1.jpg">
+          </div>
+          <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+            <h2 class="text-sm title-font text-gray-500 tracking-widest">PRODUCT CATEGORY</h2>
+            <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Product Name</h1>
+            <p class="leading-relaxed mb-4">Description of the product goes here. Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+            <div class="flex items-center mb-4">
+              <div class="mr-3">
+                <span class="text-gray-700">Size:</span>
+                <button class="border-2 border-gray-300 rounded-full w-16 h-8 focus:outline-none">Small</button>
+                <button class="border-2 border-gray-300 rounded-full w-16 h-8 focus:outline-none">Medium</button>
+                <button class="border-2 border-gray-300 rounded-full w-16 h-8 focus:outline-none">Large</button>
+              </div>
+              <div class="mr-3">
+                <span class="text-gray-700">Color:</span>
+                <button class="bg-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
+                <button class="bg-indigo-500 rounded-full w-6 h-6 focus:outline-none"></button>
+                <button class="bg-red-500 rounded-full w-6 h-6 focus:outline-none"></button>
+              </div>
+              <div>
+                <span class="text-gray-700">Quantity:</span>
+                <input class="border border-gray-300 rounded-md px-2 py-1 focus:outline-none focus:border-indigo-500" type="number" value="1">
+              </div>
+            </div>
+            <div class="flex items-center">
+              <span class="title-font font-medium text-2xl text-gray-900 mr-4">$58.00</span>
+              <button class="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-6 rounded focus:outline-none">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer class="bg-gray-600 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left Section -->
+            <div>
+                <h3 class="text-xl font-semibold">Contact Us</h3>
+                <p class="mt-2">123 Main Street, City, Country</p>
+                <p>contact@example.com</p>
+                <p>+1234567890</p>
+            </div>
+            <!-- Right Section -->
+            <div>
+                <h3 class="text-xl font-semibold">Follow Us</h3>
+                <div class="flex mt-2">
+                    <a href="#" class="text-white mr-4 hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-4 hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

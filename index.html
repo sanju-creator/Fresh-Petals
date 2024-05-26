@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind projects</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <nav class="bg-orange-200 shadow-lg">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <!-- Brand -->
+            <div class="flex items-center">
+                <img class="h-8 mr-2" src="images/logo.png" alt="Logo">
+                <a href="#" class="text-white font-bold text-xl">Fresh Petals</a>
+            </div>
+
+            <!-- Menu items -->
+            <div class="hidden md:block">
+                <ul class="ml-4 flex items-center space-x-4">
+                    <li><a href="#" class="text-xl text-orange-400 hover:text-orange-600">Home</a></li>
+                    <li><a href="aboutUs.html" class="text-xl text-orange-400 hover:text-orange-600">About us</a></li>
+                    <li><a href="services.html" class="text-xl text-orange-400 hover:text-orange-600">Services</a></li>
+                    <li><a href="#" class="text-xl text-orange-400 hover:text-orange-600">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Sign up and sign in buttons -->
+            <div class="hidden md:block">
+                <ul class="ml-4 flex items-center space-x-4">
+                    <li><a href="signUp.html" class="text-xl text-white hover:text-gray-300">Sign Up</a></li>
+                    <li><a href="#" class="text-xl text-white hover:text-gray-300">Sign In</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile menu button (hidden on large screens) -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+
+    <div class="mt-10 bg-cover bg-center bg-no-repeat h-1/2 flex items-center justify-center" style="background-image: url('images/mountain.jpg');">
+        <div class="text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to <span class="text-orange-100">Fresh Petals</span></h1>
+            <p class="text-lg md:text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="bg-white text-gray-900 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out hover:bg-gray-300 hover:text-gray-900 mb-3">Get Started</button>
+        </div>
+    </div>
+
+      <!-- carousel -->
+      <div class="overflow-hidden relative h-1/2 mt-5">
+        <div class="flex">
+          <div class="w-screen flex transition-transform duration-300 ease-in-out" x-data="{slide: 0, slides: 3, slideWidth: 1}">
+            <div class="w-screen flex-none">
+              <img src="images/flower1.jpg" alt="Image 1" class="w-full">
+            </div>
+            <div class="w-screen flex-none">
+              <img src="images/flower2.jpg" alt="Image 2" class="w-full">
+            </div>
+            <div class="w-screen flex-none">
+              <img src="images/flower3.jpg" alt="Image 3" class="w-full">
+            </div>
+          </div>
+        </div>
+        <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 rounded-l-md hover:bg-gray-700" @click="slide = (slide - 1 + slides) % slides">&#10094;</button>
+        <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 rounded-r-md hover:bg-gray-700" @click="slide = (slide + 1) % slides">&#10095;</button>
+      </div>
+
+      <!-- first card -->
+      <div class="flex flex-wrap justify-center">
+        <!-- Card 1 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 relative lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover transition duration-500 transform hover:scale-110 z-0" src="images/bouquit1.jpg" alt="Image 1">
+          <div class="px-6 py-4 flex items-center justify-center z-10">
+            <button class="bg-orange-500 hover:bg-orange-700 rounded transition duration-700 text-white font-bold py-2 px-4 mt-5">
+                <a href="checkout_firstCard.html">Check me</a>
+            </button>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 relative lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover transition duration-500 transform hover:scale-110 z-0" src="images/bouquit2.jpg" alt="Image 2">
+          <div class="px-6 py-4 flex items-center justify-center">
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-5">
+              check me
+            </button>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover transition duration-500 transform hover:scale-110" src="images/bouquit3.jpg" alt="Image 3">
+          <div class="px-6 py-4 flex items-center justify-center">
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-5">
+              Check me
+            </button>
+          </div>
+        </div>
+
+        <!-- testing card -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 lg:w-1/4 md:w-4/12">
+            <img class="w-full h-60 sm:h-auto object-cover transition duration-500 transform hover:scale-110" src="images/bouquit3.jpg" alt="Image 3">
+            <div class="px-6 py-4 flex items-center justify-center">
+              <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mt-5">
+                Check me
+              </button>
+            </div>
+          </div>
+      </div>
+
+      <!-- second card -->
+      <div class="flex flex-wrap justify-center ">
+        <!-- Card 1 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit1.jpg" alt="Image 1">
+          <div class="px-6 py-4">
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+              Button 1
+            </button>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit2.jpg" alt="Image 2">
+          <div class="px-6 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Button 2
+            </button>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit3.jpg" alt="Image 3">
+          <div class="px-6 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Button 3
+            </button>
+          </div>
+        </div>
+
+        <!-- testing -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+            <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit3.jpg" alt="Image 3">
+            <div class="px-6 py-4">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Button 3
+              </button>
+            </div>
+          </div>
+      </div>
+
+      <!--third card -->
+      <div class="flex flex-wrap justify-center">
+        <!-- Card 1 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit1.jpg" alt="Image 1">
+          <div class="px-6 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Button 1
+            </button>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit2.jpg" alt="Image 2">
+          <div class="px-6 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Button 2
+            </button>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+          <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit3.jpg" alt="Image 3">
+          <div class="px-6 py-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Button 3
+            </button>
+          </div>
+        </div>
+
+        <!-- testing -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 sm:w-1/2 lg:w-1/4 md:w-4/12">
+            <img class="w-full h-60 sm:h-auto object-cover" src="images/bouquit3.jpg" alt="Image 3">
+            <div class="px-6 py-4">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Button 3
+              </button>
+            </div>
+          </div>
+      </div>
+
+      <!-- Footer -->
+    <footer class="bg-gray-600 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left Section -->
+            <div>
+                <h3 class="text-xl font-semibold">Contact Us</h3>
+                <p class="mt-2">123 Main Street, City, Country</p>
+                <p>contact@example.com</p>
+                <p>+1234567890</p>
+            </div>
+            <!-- Right Section -->
+            <div>
+                <h3 class="text-xl font-semibold">Follow Us</h3>
+                <div class="flex mt-2">
+                    <a href="#" class="text-white mr-4 hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-4 hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ 
+</body>
+</html>
